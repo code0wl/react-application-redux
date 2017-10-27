@@ -1,19 +1,21 @@
 import React, {Component} from "react";
+import PropTypes from 'prop-types';
 import logo from "./logo.svg";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap-theme.css";
-import Home from "./components/home/home";
-import {BrowserRouter} from "react-router-dom";
+import Routes from './routes';
 
 export default class App extends Component {
     render() {
         return (
             <div className="App">
                 <img src={logo} className="App-logo" alt="logo"/>
-                <BrowserRouter>
-                    <Home/>
-                </BrowserRouter>
+                <Routes />
+                {this.props.children}
             </div>
         );
     }
 }
+
+App.propTypes = {
+    children: PropTypes.object.isRequired
+};
