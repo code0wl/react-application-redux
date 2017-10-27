@@ -1,14 +1,20 @@
 .header {
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     align-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
 .header nav {
-    flex-grow: 1;
     padding: 1rem;
-    justify-items: flex-end;
-    text-align: right;
+}
+
+.button.is-primary.is-outlined {
+    border-color: lightblue;
+    color: lightblue;
+}
+
+.header nav a {
+    margin: 0 .3rem;
 }

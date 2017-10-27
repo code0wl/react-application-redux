@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import "mini.css";
 import "./App.css";
 import Header from "./components/decorators/header/header";
 import {BrowserRouter} from "react-router-dom";
