@@ -1,10 +1,14 @@
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    height: 80px;
+    height: 4rem;
 }
 
 .App-title {
     font-size: 1.5em;
+}
+
+.app-canvas {
+    padding: 2rem;
 }
 
 .App-intro {
@@ -18,4 +22,8 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+a {
+    color: #336b87;
 }

@@ -1,9 +1,10 @@
 import React, {Component} from "react";
+import "mini.css";
 import "./App.css";
 import Header from "./components/decorators/header/header";
 import {BrowserRouter} from "react-router-dom";
 import PropTypes from "prop-types";
-import Routes from './routes';
+import Routes from "./routes";
 
 export default class App extends Component {
     render() {
@@ -12,7 +13,7 @@ export default class App extends Component {
                 <div className="App">
                     <Header/>
                     {this.props.children}
-                    <Routes />
+                    <Routes/>
                 </div>
             </BrowserRouter>
         );
