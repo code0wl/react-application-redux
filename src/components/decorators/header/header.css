@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    padding: 1rem;
+    align-content: space-between;
+    align-items: center;
+}
+
+.header nav {
+    flex-grow: 1;
+    justify-items: flex-end;
+    text-align: right;
+}
+

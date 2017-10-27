@@ -1,17 +1,20 @@
 import React, {Component} from "react";
-import PropTypes from 'prop-types';
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/decorators/header/header";
+import {BrowserRouter} from "react-router-dom";
+import PropTypes from "prop-types";
 import Routes from './routes';
 
 export default class App extends Component {
     render() {
         return (
-            <div className="App">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <Routes />
-                {this.props.children}
-            </div>
+            <BrowserRouter>
+                <div className="App">
+                    <Header/>
+                    {this.props.children}
+                    <Routes />
+                </div>
+            </BrowserRouter>
         );
     }
 }
