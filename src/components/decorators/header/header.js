@@ -9,9 +9,10 @@ class Header extends Component {
             <article className="header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <nav>
-                    <Link to="/home" className="button is-primary is-small is-outlined"> Home </Link>
-                    <Link to="/about" className="button is-primary is-small is-outlined"> About </Link>
-                    <Link to="/add" className="button is-primary is-small is-outlined"> Submit a book </Link>
+                    <Link to="/home" activeClassName="is-active" className="button is-primary is-small is-outlined"> Home </Link>
+                    <Link to="/books" activeClassName="is-active" className="button is-primary is-small is-outlined"> Books </Link>
+                    <Link to="/about" activeClassName="is-active" className="button is-primary is-small is-outlined"> About </Link>
+                    <Link to="/add" activeClassName="is-active" className="button is-primary is-small is-outlined"> Submit a book </Link>
                 </nav>
             </article>
         );
